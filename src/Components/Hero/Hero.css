@@ -1,0 +1,126 @@
+.hero{
+    display: flex;
+    padding-inline: 100px;
+    gap: 20px;
+    justify-content: space-between;
+    height: 100vh;
+}
+.hero_content{
+    max-width: 50%;
+    margin-top: 30px;
+}
+.hero_content h1{
+    font-size: 4.6rem;
+}
+.hero_content h1 span{
+    color: #1fcbff;
+}
+.hero_content p{
+    color: #7f8c8d;
+    margin: 20px 0;
+    font-size: 20px;
+}
+.buttons{
+    margin-top: 80px;
+}
+.cta-button , .courses-button{
+    padding: 20px 30px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+.cta-button{
+    background-color: #1fcbff;
+    border-radius: 30px;
+}
+.courses-button{
+    background-color: transparent;
+    border: 1px solid #1fcbff;
+    border-radius: 30px;
+}
+.cta-button:hover , .courses-button:hover{
+    background-color: #555;
+}
+.hero_images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    margin-top: 30px;
+}
+.stuent_img, .stuent_img_one, .stuent_img_two, .stuent_img_three{
+    width: 250px;
+    height: 270px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.img_top, .img_bottom{
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+.stuent_img{
+    border-top-right-radius: 100px;
+    border-bottom-left-radius:100px ;
+}
+.stuent_img_one{
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.stuent_img_two{
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+.stuent_img_three{
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.hero_content .hero_icon{
+    font-size: 50px;
+    margin-top: -80px;
+    position: absolute;
+    margin-left: 50px;
+    animation: float-icon 3s ease-in-out infinite;
+}
+@keyframes float-icon{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(0.7rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width : 480px){
+    .hero{
+        height: 140vh;
+        flex-direction: column;
+        padding-inline: 30px;
+    }
+    .hero_content{
+        margin-top: 10px;
+        text-align: center;
+        max-width: 100%;
+    }
+    .hero_content h1{
+        font-size: 3rem;
+    }
+    .hero_content p{
+        font-size: 16px;
+    }
+    .cta-button, .courses-button{
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+    .hero_images{
+        margin-top: -70px;
+        align-self: center;
+    }
+    .stuent_img, .stuent_img_one, .stuent_img_two, .stuent_img_three{
+        width: 150px;
+        height: 170px;
+    }
+}

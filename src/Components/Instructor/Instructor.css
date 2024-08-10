@@ -1,0 +1,67 @@
+.instructor{
+    padding: 1rem;
+    display: flex;
+}
+.left{
+    padding: 4rem;
+}
+.left img{
+    width: 350px;
+    height: 500px;
+    border-radius: 180px;
+}
+.right{
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.right h2{
+    font-size: 50px;
+}
+.right p{
+    font-size: 20px;
+}
+.right button{
+    width: 16rem;
+    height: 4rem;
+    border: 2px solid #1fcbff;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 30px;
+}
+.right button:hover{
+    background: #1fcbff;
+}
+
+@media screen and (max-width : 480px){
+    .instructor{
+        flex-direction: column;
+    }
+    .left{
+        padding: 4rem;
+    }
+    .left img{
+        width: 250px;
+        height: 320px;
+        border-radius: 20px;
+    }
+    .right{
+        padding: 1.5rem;
+        text-align: center;
+    }
+    .right h2{
+        font-size: 35px;
+        margin-top: -60px;
+    }
+    .right p{
+        font-size: 18px;
+    }
+    .right button{
+        border-radius: 10px;
+        background: #1fcbff;
+        align-self: center;
+        color: #fff;
+    }
+}

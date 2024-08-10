@@ -1,0 +1,37 @@
+.footer{
+    background-color: #000;
+    color: #fff;
+    padding: 3rem;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.footer_details h1{
+    font-size: 45px;
+}
+.footer_details p{
+    max-width: 400px;
+    font-size: 20px;
+}
+.footer_links ul{
+    line-height: 3rem;
+    font-size: 20px;
+}
+.footer_socials{
+    line-height: 2rem;
+}
+.footer_socials .icons{
+    display: flex;
+    gap: 1rem;
+}
+.footer_socials .footer_icon{
+    font-size: 32px;
+}
+
+@media screen and (max-width : 480px){
+    .container{
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

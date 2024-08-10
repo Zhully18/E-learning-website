@@ -1,0 +1,43 @@
+.steps{
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: -70px;
+}
+.step{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.step_list{
+    flex: 1;
+    max-width: 300px;
+    margin: 40px;
+    text-align: center;
+}
+.step_list h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+.step_list p{
+    font-size: 1.2rem;
+    color: #666;
+}
+.icon{
+    font-size: 100px;
+    font-weight: 500;
+    color: #1fcbff;
+    margin-bottom: 15px;
+}
+@media screen and (max-width : 480px){
+    .step{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 110px;
+    }
+    .step_list{
+        margin: 0;
+    }
+}
